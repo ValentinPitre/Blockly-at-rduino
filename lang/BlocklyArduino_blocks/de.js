@@ -204,6 +204,8 @@ Blockly.Msg.CAT_KIT_VELO_1 = "OBC33 kit vélo";
 Blockly.Msg.CAT_KIT_VELO_2 = "OBC33 kit vélo";
 Blockly.Msg.CAT_KIT_VELO_3 = "OBC33 kit vélo";  //added april 8th 2016
 
+Blockly.Msg.CAT_KITROBOTP46 = "Kit Robot P46";
+
 Blockly.Msg.CAT_MBOT_1 = "mBot";
 Blockly.Msg.CAT_MBOT_2 = "mBot";
 Blockly.Msg.CAT_MBOT_3 = "mBot"; //added april 8th 2016
