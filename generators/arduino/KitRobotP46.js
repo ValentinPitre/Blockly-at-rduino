@@ -20,7 +20,7 @@ Blockly.Arduino.kit_init = function() {
 
 		Blockly.Arduino.definitions_['define_isr_process_encoder'+i] = "void isr_process_encoder"+i+"(void)\n"+
 		"{\n"+
-		"  if(digitalRead(Motor"+i+".getPinB()) == 0){\n"+
+		"  if(digitalRead(Motor"+i+".getPinB()) == 1){\n"+
 		" 	 Motor"+i+".pulsePosMinus();\n"+
 		"  }else{\n"+
 		" 	 Motor"+i+".pulsePosPlus();}\n"+
