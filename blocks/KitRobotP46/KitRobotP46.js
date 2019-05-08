@@ -544,5 +544,5 @@ Blockly.Blocks['kit_myrobot_waitmove'] = {
     this.setNextStatement(true, null);
     this.setColour(270);
  this.setTooltip("");
- this.setHelpUrl("");  }
+ this.setHelpUrl("");
 };
