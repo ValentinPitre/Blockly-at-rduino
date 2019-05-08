@@ -534,15 +534,3 @@ Blockly.Blocks['kit_myrobot_move'] = {
  this.setHelpUrl("");
   }
 };
-
-Blockly.Blocks['kit_myrobot_waitmove'] = {
-  init: function() {
-    this.appendDummyInput()
-        .appendField("Attendre la fin du mouvement du robot");
-    this.setInputsInline(true);
-    this.setPreviousStatement(true, null);
-    this.setNextStatement(true, null);
-    this.setColour(270);
- this.setTooltip("");
- this.setHelpUrl("");  }
-};

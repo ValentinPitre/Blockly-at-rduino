@@ -34,7 +34,6 @@
 		<block type="kit_myrobot_gaucheAngle"></block>	
 		<block type="kit_myrobot_droiteAngle"></block>
 		<block type="kit_myrobot_move"></block>	
-		<block type="kit_myrobot_waitmove"></block>	
 	</category>
 	<category name="CAT_LOGIC" colour="#E1A91A">
 		<block type="controls_if"></block>

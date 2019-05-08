@@ -91,6 +91,3 @@ Blockly.Blocks.kit_myrobot_droiteAngle.getBlockType = function() {
 Blockly.Blocks.kit_myrobot_move.getBlockType = function() {
 	return Blockly.Types.NUMBER;
 };
-Blockly.Blocks.kit_myrobot_waitmove.getBlockType = function() {
-	return Blockly.Types.NUMBER;
-};
