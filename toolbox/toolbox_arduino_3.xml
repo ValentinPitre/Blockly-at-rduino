@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
-	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO</parametre>
+	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_KITROBOTP46</parametre>
 	<category name="CAT_KITROBOTP46" colour="#33C7F2">
 		
 		<block type="kit_init"></block>
@@ -34,6 +34,7 @@
 		<block type="kit_myrobot_gaucheAngle"></block>	
 		<block type="kit_myrobot_droiteAngle"></block>
 		<block type="kit_myrobot_move"></block>	
+		<block type="kit_myrobot_waitmove"></block>	
 	</category>
 	<category name="CAT_LOGIC" colour="#E1A91A">
 		<block type="controls_if"></block>

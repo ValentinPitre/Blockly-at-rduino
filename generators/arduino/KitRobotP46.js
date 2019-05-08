@@ -318,3 +318,9 @@ Blockly.Arduino.kit_myrobot_move= function() {
 	return code;
 };
 
+Blockly.Arduino.kit_myrobot_waitmove= function() {
+  var code = 'Robot.WaitTarPosReached();\n';
+  return code;
+};
+
+
