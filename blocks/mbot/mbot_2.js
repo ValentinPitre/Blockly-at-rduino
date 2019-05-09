@@ -279,11 +279,8 @@ Blockly.Blocks['kit_bras_down'] = {
 Blockly.Blocks['kit_sensor_ultrasons'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("Distance du capteur à ultrasons d'addresse")
+        .appendField("Distance en cm du capteur à ultrasons d'addresse")
         .appendField(new Blockly.FieldNumber(1, 1, 255), "address");
-    this.appendDummyInput()
-        .appendField("en")
-        .appendField(new Blockly.FieldDropdown([["centimètres","cm"], ["millimètres","mm"]]), "unit");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
     this.setColour(135);

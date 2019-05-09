@@ -20,7 +20,7 @@ Blockly.Arduino.kit_init = function() {
 
 		Blockly.Arduino.definitions_['define_isr_process_encoder'+i] = "void isr_process_encoder"+i+"(void)\n"+
 		"{\n"+
-		"  if(digitalRead(Motor"+i+".getPinB()) == 0){\n"+
+		"  if(digitalRead(Motor"+i+".getPinB()) == 1){\n"+
 		" 	 Motor"+i+".pulsePosMinus();\n"+
 		"  }else{\n"+
 		" 	 Motor"+i+".pulsePosPlus();}\n"+
@@ -176,17 +176,11 @@ Blockly.Arduino.kit_bras_down= function() {
 
 Blockly.Arduino.kit_sensor_ultrasons= function() {
   var number_address = this.getFieldValue('address');
-  var dropdown_unit = this.getFieldValue('unit');
 
   Blockly.Arduino.definitions_['var_ultrasonic_'+number_address] = 'CapteurUltrasons MyCapteurUS_'+number_address+'('+number_address+');\n';
 
   var code = "MyCapteurUS_"+number_address;
-
-  if(dropdown_unit==="cm"){
-    code += '.DistanceCm())';
-  } else {
-    code += '.DistanceMm())';
-  }
+  code += '.DistanceCm()';
 			 
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
@@ -201,9 +195,9 @@ Blockly.Arduino.kit_sensor_sharp= function() {
   var code = "MonCapteur_Sharp"+number_address+'_'+number_numb;
 
   if(dropdown_unit==="cm"){
-    code += '.DistanceCm())';
+    code += '.DistanceCm()';
   } else {
-    code += '.DistanceMm())';
+    code += '.DistanceMm()';
   }
 			
   return [code, Blockly.Arduino.ORDER_ATOMIC];
@@ -215,7 +209,7 @@ Blockly.Arduino.kit_sensor_ligne= function() {
 
   Blockly.Arduino.definitions_['var_line_sensor_'+number_address] = 'CapteurDeLignes MonCapteurDeLignes'+number_address+'('+number_address+');\n';
 
-  var code = "MonCapteurDeLignes"+number_address+".State())";
+  var code = "MonCapteurDeLignes"+number_address+".State()";
 		
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 }; 
