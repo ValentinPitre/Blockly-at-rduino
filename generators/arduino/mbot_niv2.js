@@ -272,6 +272,11 @@ Blockly.Arduino.kit_myrobot_stop= function() {
 	return code;
 };
 
+Blockly.Arduino.kit_myrobot_wait= function() {
+  var code = 'Robot.WaitTarPosReached();\n';
+  return code;
+};
+
 Blockly.Arduino.kit_myrobot_avancerCm= function() {
 	var number_dist = this.getFieldValue('dist');
 	var number_speed = this.getFieldValue('speed');

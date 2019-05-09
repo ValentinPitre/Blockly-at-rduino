@@ -30,6 +30,7 @@
 		<block type="kit_myrobot_gauche"></block>	
 		<block type="kit_myrobot_droite"></block>	
 		<block type="kit_myrobot_stop"></block>	
+		<block type="kit_myrobot_wait"></block>
 		<block type="kit_myrobot_avancerCm"></block>	
 		<block type="kit_myrobot_reculerCm"></block>	
 		<block type="kit_myrobot_gaucheAngle"></block>	

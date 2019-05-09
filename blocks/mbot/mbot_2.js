@@ -438,6 +438,20 @@ Blockly.Blocks['kit_myrobot_stop'] = {
   }
 };
 
+Blockly.Blocks['kit_myrobot_wait'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Attendre la fin du mouvement du robot");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(270);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
+
 Blockly.Blocks['kit_myrobot_avancerCm'] = {
  init: function() {
     this.appendDummyInput()

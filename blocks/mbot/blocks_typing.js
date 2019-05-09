@@ -76,6 +76,9 @@ Blockly.Blocks.kit_myrobot_droite.getBlockType = function() {
 Blockly.Blocks.kit_myrobot_stop.getBlockType = function() {
 	return Blockly.Types.NUMBER;
 };
+Blockly.Blocks.kit_myrobot_wait.getBlockType = function() {
+	return Blockly.Types.NUMBER;
+};
 Blockly.Blocks.kit_myrobot_avancerCm.getBlockType = function() {
 	return Blockly.Types.NUMBER;
 };
