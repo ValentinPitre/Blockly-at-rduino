@@ -349,7 +349,7 @@ Blockly.Blocks['kit_myrobot_init'] = {
         .appendField("- le moteur droit sur le port")
         .appendField(new Blockly.FieldDropdown([["Port1","1"], ["Port2","2"], ["Port3","3"], ["Port4","4"]]), "PortD");
     this.appendDummyInput()
-        .appendField("- largeur entre les roue de")
+        .appendField("- distance maximale entre 2 roues de ")
         .appendField(new Blockly.FieldNumber(0, 0), "largeur")
         .appendField("cm");
     this.appendDummyInput()
